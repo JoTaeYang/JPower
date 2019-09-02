@@ -131,7 +131,6 @@ ul,li {
     position: relative;
     overflow: hidden;
 }
-
 #slide ul {
     margin: 0;
     padding: 0;
@@ -139,7 +138,6 @@ ul,li {
     height: 100%;
     transition: 1s;
 }
-
 #slide input {
     display: none;
 }
@@ -151,9 +149,12 @@ ul,li {
 }
 
 #slide li:nth-child(1) {
-    background: black;
+    background-image : url("./data/company_slide.png");
+    background-size : cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
+/*
 #slide li:nth-child(2) {
     background: red;
 }
@@ -164,7 +165,7 @@ ul,li {
 
 #slide li:nth-child(4) {
     background: blue;
-}
+}*/
 
 #slide label {
     display: inline-block;
