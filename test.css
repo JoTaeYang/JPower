@@ -138,6 +138,7 @@ ul,li {
     height: 100%;
     transition: 1s;
 }
+
 #slide input {
     display: none;
 }
@@ -212,7 +213,7 @@ ul,li {
 }
 
 .container_title {
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
 }
@@ -240,7 +241,7 @@ ul,li {
 .item img {
     display: block;
     width: auto;
-    height: auto;
+    height: 23vh;
     max-width: 100%;
     border-radius: 25px;
     background: #d3d2d2;
@@ -259,10 +260,15 @@ ul,li {
  histroy.html부분 css
 */
 .sub_tit_wrap{
-    max-width : 1300px;
+    max-width:1300px;
     margin : auto;
     padding : 0 20px 20px;  
     border-bottom: 1px solid black;
+}
+.sub_tit_wrap img{
+    height : auto;
+    width : auto;
+    max-width : 1300px;
 }
 .pathindicator {
     font-size: 0.9rem;
@@ -311,7 +317,14 @@ ul,li {
     border-top: 1px solid #dddddd;
 }
 
-/*histroy*/
+/*histroy fin*/
+
+/* greeting*/
+.greeting_wrap{
+    max-width : 1350px;
+    margin : auto;
+    padding : 0; 
+}
 
 /*map*/
 #map {
@@ -383,11 +396,23 @@ ul,li {
     .nav_m ul li>a:hover {
         color: #dadada83;
     }
-
+    
+    #slide {
+        height : 70vw;
+    }
+    #slide li {        
+        height: 70vw;    
+    }
     .container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         align-items: start;
-        height: auto;
+        height: auto;        
+    }
+    .container li{
+        width : 80%;
+    }
+    .item img {
+        height: 15vh;
     }
 }
